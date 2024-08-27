@@ -1,0 +1,7 @@
+.about-info {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 2% 25%;
+  line-height: 1.8;
+}

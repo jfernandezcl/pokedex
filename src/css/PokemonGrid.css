@@ -1,0 +1,9 @@
+.pokemon-cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: start;
+  place-items: center;
+  gap: 60px;
+  padding: 50px;
+}

@@ -1,0 +1,14 @@
+.home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 35px;
+
+}

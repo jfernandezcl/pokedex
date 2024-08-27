@@ -3,11 +3,14 @@ import { useEffect, useState } from "react"
 export const usePokemon = () => {
   const [pokemons, setPokemons] = useState([]);
   const [filteredPokemons, setFilteredPokemons] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1)
+  const [pokemonsPerPage] = useState(20) // Número de pokémon por página
+
 
   useEffect(() => {
     const fetchPokemons = async () => {
       const responses = await Promise.all(
-        Array.from({ length: 20 }, (_, i) =>
+        Array.from({ length: 150 }, (_, i) =>
           fetch(`https://pokeapi.co/api/v2/pokemon/${i + 1}`)
         )
       );
@@ -42,5 +45,11 @@ export const usePokemon = () => {
       setFilteredPokemons(filtered)
     }
   }
-  return { pokemons: filteredPokemons, filterPokemons }
+
+  // Determinar lo Pokémon a mostrar en la página actual
+  const indexOfLastPokemon = currentPage * pokemonsPerPage
+  const indexOfFirstPokemon = indexOfLastPokemon - pokemonsPerPage
+  const currentPokemons = filteredPokemons.slice(indexOfFirstPokemon, indexOfLastPokemon)
+
+  return { currentPokemons, filterPokemons, currentPage, setCurrentPage, totalPages: Math.ceil(filteredPokemons.length / pokemonsPerPage) }
 }

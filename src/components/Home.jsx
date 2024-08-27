@@ -5,7 +5,9 @@ import { usePokemon } from "../hooks/usePokemon";
 
 
 export default function Home() {
-  const { pokemons, filterPokemons } = usePokemon()
+  const { currentPokemons, currentPage, setCurrentPage, totalPages, loading, filterPokemons } = usePokemon()
+
+
   return (
     <>
       <div className="home-title">
@@ -15,7 +17,12 @@ export default function Home() {
         <SearchBar onSearch={filterPokemons} />
       </div>
       <div className="container-home">
-        <PokemonList pokemons={pokemons} />
+        <PokemonList
+          pokemons={currentPokemons}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          totalPages={totalPages}
+          loading={loading} />
       </div>
     </>
   )

@@ -1,10 +1,8 @@
 import { useEffect } from "react";
-import { usePokemon } from "../hooks/usePokemon";
 import PokemonGrid from "./PokemonGrid";
+import '../css/PokemonList.css'
 
-export default function PokemonList() {
-  const { currentPokemons, currentPage, setCurrentPage, totalPages } = usePokemon()
-
+export default function PokemonList({ pokemons, currentPage, setCurrentPage, totalPages, loading }) {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -16,8 +14,13 @@ export default function PokemonList() {
 
   return (
     <div>
-      <PokemonGrid pokemons={currentPokemons} />
-      <div>
+      {loading ?
+        <div className="container-spinner">
+          <div className="spinner"></div>
+        </div>
+        : <PokemonGrid pokemons={pokemons} />
+      }
+      <div className="button-pages">
         {currentPage > 1 && (
           <button onClick={() => paginate(currentPage - 1)}
           >Página anterior</button>

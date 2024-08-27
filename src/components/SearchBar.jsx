@@ -1,6 +1,6 @@
 import { useState } from "react";
 import '../css/SearchBar.css'
-import icon from '../images/iconSearch.png'
+import icon from '../images/iconsearch.png'
 
 
 export default function SearchBar({ onSearch }) {

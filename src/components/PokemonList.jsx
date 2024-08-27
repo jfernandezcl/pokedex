@@ -18,6 +18,10 @@ export default function PokemonList() {
     <div>
       <PokemonGrid pokemons={currentPokemons} />
       <div>
+        {currentPage > 1 && (
+          <button onClick={() => paginate(currentPage - 1)}>Página anterior</button>
+        )}
+
         {Array.from({ length: totalPages }).map((_, index) => (
           <button
             key={index}
@@ -27,6 +31,10 @@ export default function PokemonList() {
             {index + 1}
           </button>
         ))}
+
+        {currentPage > 1 && (
+          <button onClick={() => paginate(currentPage + 1)}>Página siguiente</button>
+        )}
       </div>
     </div>
   )

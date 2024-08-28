@@ -1,14 +1,18 @@
 import { useState } from "react";
 import '../css/SearchBar.css'
 import icon from '../images/iconsearch.png'
+import { useNavigate } from "react-router-dom";
 
 
 export default function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('')
+  const navigate = useNavigate()
 
   const handleSearch = () => {
-    onSearch(searchTerm);
-    setSearchTerm('')
+    if (searchTerm.trim() !== '') {
+      navigate(`/pokemon/${searchTerm.toLowerCase()}`)
+      setSearchTerm('')
+    }
   }
 
   return (
@@ -21,7 +25,7 @@ export default function SearchBar({ onSearch }) {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button className="search-button" onClick={handleSearch}>
-        <img src={icon} className="button-icon" />
+        <img src={icon} className="button-icon" alt="search-icon" />
       </button>
     </div>
   )

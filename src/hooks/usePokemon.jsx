@@ -53,5 +53,5 @@ export const usePokemon = () => {
   const indexOfFirstPokemon = indexOfLastPokemon - pokemonsPerPage
   const currentPokemons = filteredPokemons.slice(indexOfFirstPokemon, indexOfLastPokemon)
 
-  return { currentPokemons, filterPokemons, currentPage, setCurrentPage, totalPages: Math.ceil(filteredPokemons.length / pokemonsPerPage), loading }
+  return { pokemons, currentPokemons, filterPokemons, currentPage, setCurrentPage, totalPages: Math.ceil(filteredPokemons.length / pokemonsPerPage), loading }
 }

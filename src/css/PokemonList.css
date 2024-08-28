@@ -6,8 +6,11 @@
 }
 
 .button-pages {
-  border: none;
-  color: #374151;
+  border: 1px solid #374151;
+  border-radius: 4px;
+  color: black;
+  margin: 4px;
+  
 }
 
 

@@ -24,7 +24,7 @@ export default function PokemonList({ pokemons, currentPage, setCurrentPage, tot
         <div>
           {currentPage > 1 && (
             <button className="button-pages" onClick={() => paginate(currentPage - 1)}
-            >Página anterior</button>
+            >Previous page</button>
           )}
 
           {Array.from({ length: totalPages }).map((_, index) => (
@@ -41,7 +41,7 @@ export default function PokemonList({ pokemons, currentPage, setCurrentPage, tot
           {currentPage > 1 && (
             <button className="button-pages" onClick={() => paginate(currentPage + 1)}
               disabled={currentPage >= totalPages}
-            >Página siguiente</button>
+            >Next page</button>
           )}
         </div>
       </div>

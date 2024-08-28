@@ -5,6 +5,11 @@
   margin-bottom: 30px;
 }
 
+.button-pages {
+  border: none;
+  color: #374151;
+}
+
 
 /* Para cuando esta cargando */
 .spinner {

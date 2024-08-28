@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import '../css/PokemonCard.css'
 
 function letter(string) {
@@ -6,8 +7,13 @@ function letter(string) {
 
 
 export default function PokemonCard({ pokemon }) {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate(`/pokemon/${pokemon.name.toLowerCase()}`)
+  }
   return (
-    <div className="container-card">
+    <div className="container-card" onClick={handleClick}>
       <div className='card-pokemon'>
         <img className='card-imagen' src={pokemon.image} alt={pokemon.name} />
       </div>

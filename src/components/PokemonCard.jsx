@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom'
 import '../css/PokemonCard.css'
 
-function letter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
-} // Para la primera letra mayúscula
-
 
 export default function PokemonCard({ pokemon }) {
   const navigate = useNavigate()
+
+  function letter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1)
+  }
 
   const handleClick = () => {
     navigate(`/pokemon/${pokemon.name.toLowerCase()}`)

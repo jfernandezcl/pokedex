@@ -13,16 +13,18 @@ export default function Details({ pokemon }) {
         <span className='details-id'>{pokemon.id}</span>
       </div>
       <div>
-        <img src={pokemon.sprites.other.dream_world.front_default}
+        <img className='details-images' src={pokemon.sprites.other.dream_world.front_default}
           alt={pokemon.name} />
       </div>
       <div>
         <span>Type: {pokemon.types.join(' / ')}</span>
       </div>
-      <div>
-        <span>H {pokemon.height}</span>
-        <span>W {pokemon.weight}</span>
+      <div className='details-size'>
+        <span>Height {pokemon.height}</span>
+        <span>Weight {pokemon.weight}</span>
       </div>
     </div>
+
   )
+
 }

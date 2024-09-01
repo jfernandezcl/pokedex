@@ -15,19 +15,19 @@ export default function Details({ pokemon }) {
       </div>
 
       <div className='container-primary'>
-
-        <div className="container-left">
+        <div>
           <img className='pokemon-images'
             src={pokemon.image}
             alt={pokemon.name} />
         </div>
 
-        <div className='container-right'>
+        <div className='container-details'>
           <span>{pokemon.description}</span>
           <span>Type: {pokemon.types.join(' / ')}</span>
           <span>Height {pokemon.height}</span>
           <span>Weight {pokemon.weight}</span>
         </div>
+
       </div>
     </>
 

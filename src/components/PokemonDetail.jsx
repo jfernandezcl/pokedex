@@ -35,7 +35,7 @@ export default function PokemonDetail() {
           types: data.types.map((typeInfo) => typeInfo.type.name),
           image: data.sprites.other.home.front_default,
           images: data.sprites.other.home.front_shiny,
-          description: dataDescription.flavor_text_entries[0].flavor_text
+          description: dataDescription.flavor_text_entries[0].flavor_text.replace(/\f/g, '')
         }
         setSelectedPokemon(formattedData)
         setError(null)

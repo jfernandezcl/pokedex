@@ -18,7 +18,7 @@ export default function About() {
         <h3>Fecha y Hora del Proyecto:</h3>
         <ul>
           <li>Inicio: 22 de agosto de 2024, 11:00h</li>
-          <li>Última Actualización: 27 de agosto de 2024, 12:00h</li>
+          <li>Última Actualización: 01 de septiembre de 2024, 13:02h</li>
         </ul>
       </div>
       <div>

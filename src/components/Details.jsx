@@ -8,7 +8,7 @@ export default function Details({ pokemon }) {
 
   return (
 
-    <>
+    <div>
       <div className='pokemon-header'>
         <span className='pokemon-name'>{letter(pokemon.name)}</span>
         <span className='pokemon-id'>{pokemon.id}</span>
@@ -23,13 +23,13 @@ export default function Details({ pokemon }) {
 
         <div className='container-details'>
           <span>{pokemon.description}</span>
-          <span>Type: {pokemon.types.join(' / ')}</span>
-          <span>Height {pokemon.height}</span>
-          <span>Weight {pokemon.weight}</span>
+          <span className='details-type'> {pokemon.types.join(' / ')}</span>
+          <span className='details-size'>H {pokemon.height}</span>
+          <span className='details-size'>W {pokemon.weight}</span>
         </div>
 
       </div>
-    </>
+    </div>
 
 
 

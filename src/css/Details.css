@@ -29,11 +29,29 @@
 /* Contenedor de la derecha */
 .container-details{
   display: flex; 
-  flex-direction: column; 
-  gap: 12px; 
+  flex-direction: row; 
+  text-align: lef;
+  gap: 40px; 
   font-weight: 600;
-  width: 500px;
+  width: 750px;
   padding: 20px;
   margin-top: 2rem;
   background-color: #6b7280;
+  border-radius: 4px;
+}
+
+.details-type {
+  background-color: aliceblue;
+  width: 200px;
+  height: 24px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.details-size {
+  background-color: aliceblue;
+  width: 125px;
+  height: 24px;
+  border-radius: 8px;
+  font-size: 15px;
 }

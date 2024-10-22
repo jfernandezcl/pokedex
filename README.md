@@ -1,23 +1,20 @@
 ![Poké Ball](./src/images/vector-pokemon.jpg)
 
-### Pokedex con React y Vite 
+### Pokedex with React and Vite
 
-Este proyecto es una aplicación web desarrollada con React y Vite para explorar y visualizar Pokémon utilizando la PokeAPI. El objetivo es combinar React con estilos personalizados en CSS para crear una interfaz dinámica y atractiva.
-Funcionalidades
+This project is a web application developed with React and Vite to explore and visualize Pokémon using the PokeAPI. The goal is to combine React with custom CSS styles to create a dynamic and attractive interface.
 
-   - Listado interactivo de Pokémon obtenidos desde la PokeAPI.
-   - Estilos CSS personalizados para un diseño visualmente agradable.
+- Interactive list of Pokémon fetched from the PokeAPI.
+- Custom CSS styles for a visually appealing design.
 
-### Resumen del Orden de Implementación:
+### Summary of Implementation Order:
 
-    1. Configurar el Proyecto y Crear la Estructura de Archivos.
-    2. Desarrollar el Hook Personalizado (usePokemon.js).
-    3. Crear el Componente de la Barra de Búsqueda (SearchBar.jsx).
-    4. Crear el Componente de la Tarjeta de Pokémon (PokemonCard.jsx).
-    5. Crear el Componente de la Cuadrícula de Pokémon (PokemonGrid.jsx).
-    6. Crear el Componente que Orquesta la Lógica de la Lista de Pokémon (PokemonList.jsx).
-    7. Desarrollar el Componente Principal (App.jsx).
-    8. Configurar el Punto de Entrada (main.jsx).
-    9. Añadir Estilos CSS.
-
-
+    1. Set up the Project and Create the File Structure.
+    2. Develop the Custom Hook (usePokemon.js).
+    3. Create the Search Bar Component (SearchBar.jsx).
+    4. Create the Pokémon Card Component (PokemonCard.jsx).
+    5. Create the Pokémon Grid Component (PokemonGrid.jsx).
+    6. Create the Component that Manages the Pokémon List Logic (PokemonList.jsx).
+    7. Develop the Main Component (App.jsx).
+    8. Set up the Entry Point (main.jsx).
+    9. Add CSS Styles.

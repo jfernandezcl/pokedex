@@ -1,20 +1,55 @@
-![Poké Ball](./src/images/vector-pokemon.jpg)
+# Pokédex with React and Vite
 
-### Pokedex with React and Vite
+A web application built with **React** and **Vite** that allows you to explore and view Pokémon using the **PokeAPI**. It combines React’s power with custom CSS styling to provide a dynamic and visually appealing interface.
 
-This project is a web application developed with React and Vite to explore and visualize Pokémon using the PokeAPI. The goal is to combine React with custom CSS styles to create a dynamic and attractive interface.
+---
 
-- Interactive list of Pokémon fetched from the PokeAPI.
-- Custom CSS styles for a visually appealing design.
+## ✨ Features
 
-### Summary of Implementation Order:
+- Interactive list of Pokémon fetched directly from the PokeAPI.
+- Custom CSS styles for a polished visual experience.
+- Reusable components with clear code organization.
+- Modern navigation implemented with React Router.
 
-    1. Set up the Project and Create the File Structure.
-    2. Develop the Custom Hook (usePokemon.js).
-    3. Create the Search Bar Component (SearchBar.jsx).
-    4. Create the Pokémon Card Component (PokemonCard.jsx).
-    5. Create the Pokémon Grid Component (PokemonGrid.jsx).
-    6. Create the Component that Manages the Pokémon List Logic (PokemonList.jsx).
-    7. Develop the Main Component (App.jsx).
-    8. Set up the Entry Point (main.jsx).
-    9. Add CSS Styles.
+---
+
+## 🧱 Project Structure
+
+1. Initial project setup and file structure.
+2. Custom hook: `usePokemon.js`.
+3. Search bar component: `SearchBar.jsx`.
+4. Pokémon display component: `PokemonCard.jsx`.
+5. Pokémon grid component: `PokemonGrid.jsx`.
+6. Pokémon list logic component: `PokemonList.jsx`.
+7. Main application component: `App.jsx`.
+8. Entry point: `main.jsx`.
+9. Application of custom CSS styles.
+
+---
+
+## ⚙️ Available Scripts
+
+```bash
+npm run dev       # Starts the development server
+npm run build     # Builds the app for production
+npm run preview   # Previews the production build
+npm run lint      # Runs ESLint to analyze the code
+
+📦 Main Dependencies
+
+    React ^18.3.1
+
+    React DOM ^18.3.1
+
+    React Router DOM ^6.26.1
+
+    Vite ^5.4.1
+
+    ESLint and plugins for maintaining clean and consistent code
+
+🔗 API Used
+
+    PokeAPI: Provides the Pokémon data displayed in the app
+
+    URL: https://pokeapi.co/
+```

@@ -29,27 +29,24 @@ A web application built with **React** and **Vite** that allows you to explore a
 
 ## ⚙️ Available Scripts
 
-```bash
-npm run dev       # Starts the development server
-npm run build     # Builds the app for production
-npm run preview   # Previews the production build
-npm run lint      # Runs ESLint to analyze the code
+- npm run dev # Starts the development server
+- npm run build # Builds the app for production
+- npm run preview # Previews the production build
+- npm run lint # Runs ESLint to analyze the code
 
-📦 Main Dependencies
+---
 
-    React ^18.3.1
+## 📦 Main Dependencies
 
-    React DOM ^18.3.1
+- React ^18.3.1
+- React DOM ^18.3.1
+- React Router DOM ^6.26.1
+- Vite ^5.4.1
+- ESLint and plugins for maintaining clean and consistent code
 
-    React Router DOM ^6.26.1
+---
 
-    Vite ^5.4.1
+## 🔗 API Used
 
-    ESLint and plugins for maintaining clean and consistent code
-
-🔗 API Used
-
-    PokeAPI: Provides the Pokémon data displayed in the app
-
-    URL: https://pokeapi.co/
-```
+- PokeAPI: Provides the Pokémon data displayed in the app
+- URL: https://pokeapi.co/

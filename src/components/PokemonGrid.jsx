@@ -1,6 +1,5 @@
-// organizar y mostrar todas las tarjetas en una cuadrícula
 import PokemonCard from "./PokemonCard";
-import '../css/PokemonGrid.css'
+import "../css/PokemonGrid.css";
 
 export default function PokemonGrid({ pokemons }) {
   return (
@@ -9,5 +8,5 @@ export default function PokemonGrid({ pokemons }) {
         <PokemonCard key={pokemon.id} pokemon={pokemon} />
       ))}
     </div>
-  )
+  );
 }

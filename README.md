@@ -46,6 +46,13 @@ A web application built with **React** and **Vite** that allows you to explore a
 
 ---
 
+🚀 Deployment
+
+This project is deployed on Vercel.
+🔗 Live URL: https://pokedex-six-rust.vercel.app
+
+---
+
 ## 🔗 API Used
 
 - PokeAPI: Provides the Pokémon data displayed in the app

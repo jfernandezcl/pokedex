@@ -53,13 +53,15 @@ export default function PokemonDetail() {
   }, [name]);
 
   return (
-    <div>
-      {error && <p>{error}</p>}
-      {selectedPokemon ? (
-        <Details pokemon={selectedPokemon} />
-      ) : (
-        !error && <p>Loading...</p>
-      )}
+    <div className="details-container">
+      <div>
+        {error && <p>{error}</p>}
+        {selectedPokemon ? (
+          <Details pokemon={selectedPokemon} />
+        ) : (
+          !error && <p>Loading...</p>
+        )}
+      </div>
     </div>
   );
 }

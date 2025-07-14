@@ -17,8 +17,10 @@ The interface is designed so that anyone can use it without trouble, whether on 
 
 export default function About() {
   return (
-    <div className="about-info">
-      <ReactMarkdown>{description}</ReactMarkdown>
+    <div>
+      <div className="about-card">
+        <ReactMarkdown>{description}</ReactMarkdown>
+      </div>
     </div>
   );
 }

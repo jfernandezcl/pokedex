@@ -1,8 +1,16 @@
-.about-info {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  margin: 6% 25%;
+.about-card {
+  background: #2d2d2d;
+  color: #e0e0e0;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 6% auto;
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.15), 0 0 12px rgba(0, 255, 255, 0.08);
   line-height: 1.8;
-  color: white;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3), 0 0 14px rgba(0, 255, 255, 0.15);
 }

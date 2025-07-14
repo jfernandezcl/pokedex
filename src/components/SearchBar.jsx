@@ -14,16 +14,27 @@ export default function SearchBar({ onSearch }) {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   return (
-    <div>
+    <div className="searchbar-container">
       <input
         className="search-input"
         type="text"
         placeholder="Search for Pokémon..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleKeyDown}
       />
-      <button className="search-button" onClick={handleSearch}>
+      <button
+        className="search-button"
+        onClick={handleSearch}
+        aria-label="Search"
+      >
         <img src={icon} className="button-icon" alt="search-icon" />
       </button>
     </div>

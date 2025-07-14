@@ -1,75 +1,24 @@
-import '../css/About.css'
+import "../css/About.css";
+import ReactMarkdown from "react-markdown";
+
+const description = `
+This application allows you to explore the world of Pokémon in a simple, visual, and intuitive way.
+
+All the information is retrieved in real time from the PokéAPI, ensuring that the data is always up to date.
+
+When you enter the app, you'll see a list of Pokémon that you can browse through easily. There's also a search bar that lets you quickly find any Pokémon by name.
+
+Additionally, if you click on a specific Pokémon, you'll be taken to a separate page with more detailed information: its official image, types, abilities, and other relevant data.
+
+It's a convenient way to learn more about each Pokémon without leaving the app.
+
+The interface is designed so that anyone can use it without trouble, whether on a computer or a mobile device. Whether you're just curious or looking for specific information, this tool makes discovering Pokémon a smooth and enjoyable experience.
+`;
 
 export default function About() {
   return (
     <div className="about-info">
-      <div>
-        <h1>Descripción del Proyecto</h1>
-        <p>
-          ¡Hola! Soy un desarrollador en formación y actualmente estoy aprendiendo las bases de
-          React a través de proyectos prácticos. Este proyecto es una Pokedex con React y Vite,
-          donde mi objetivo principal ha sido explorar cómo combinar React con estilos personalizados
-          en CSS para crear una interfaz dinámica y atractiva. Además, este ejercicio me ha ayudado
-          a profundizar en la integración con APIs, utilizando la PokeAPI para mostrar la información
-          de los Pokémon.
-        </p>
-      </div>
-      <div>
-        <h3>Fecha y Hora del Proyecto:</h3>
-        <ul>
-          <li>Inicio: 22 de agosto de 2024, 11:00h</li>
-          <li>Última Actualización: 01 de septiembre de 2024, 13:02h</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Funcionalidades del proyecto:</h3>
-        <ul>
-          <li>Listado interactivo de Pokémon obtenidos desde la PokeAPI.</li>
-          <li>Estilos CSS personalizados para un diseño moderno y agradable.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Resumen del Orden de Implementación:</h3>
-        <ul>
-          <li>
-            <strong>Configurar el Proyecto y Crear la Estructura de Archivos:</strong> Inicié configurando el proyecto
-            con Vite y React, organizando las carpetas para componentes, hooks y estilos.
-          </li>
-          <li>
-            <strong>Desarrollar el Hook Personalizado (usePokemon.js):</strong> Creé un hook personalizado para gestionar la lógica de obtención
-            y filtrado de datos desde la PokeAPI.
-          </li>
-          <li>
-            <strong>Crear el Componente de la Barra de Búsqueda (SearchBar.jsx):</strong> Implementé una barra de búsqueda para filtrar
-            Pokémon en función de su nombre.
-          </li>
-          <li>
-            <strong>Crear el Componente de la Tarjeta de Pokémon (PokemonCard.jsx):</strong> Diseñé tarjetas individuales para cada Pokémon, mostrando
-            su nombre, imagen y algunos detalles relevantes.
-          </li>
-          <li>
-            <strong>Crear el Componente de la Cuadrícula de Pokémon (PokemonGrid.jsx):</strong> Este componente organiza y muestra las
-            tarjetas de Pokémon en un formato de cuadrícula.
-          </li>
-          <li>
-            <strong>Crear el Componente que Orquesta la Lógica de la Lista de Pokémon (PokemonList.jsx):</strong> Aquí centralicé la lógica
-            para obtener, filtrar y renderizar la lista completa de Pokémon.
-          </li>
-          <li>
-            <strong>Desarrollar el Componente Principal (App.jsx):</strong> El componente principal que orquesta todo el flujo y la
-            interacción entre los componentes.
-          </li>
-          <li>
-            <strong>Configurar el Punto de Entrada (main.jsx):</strong> Configuré el punto de entrada de la aplicación en main.jsx,
-            asegurándome de que todo esté correctamente enlazado.
-          </li>
-          <li>
-            <strong>Añadir Estilos CSS:</strong> Finalmente, trabajé en la personalización de los estilos para darle al proyecto
-            un diseño moderno y visualmente agradable.
-          </li>
-        </ul>
-      </div>
-
-    </div >
-  )
+      <ReactMarkdown>{description}</ReactMarkdown>
+    </div>
+  );
 }

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #16141b;
-  background: linear-gradient(to top, #2c2b2e, #16141b);
-  font-family: "Lato", sans-serif;
+  background: #3a3a3a;
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
 }

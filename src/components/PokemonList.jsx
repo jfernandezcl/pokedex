@@ -1,50 +1,65 @@
 import { useEffect } from "react";
 import PokemonGrid from "./PokemonGrid";
-import '../css/PokemonList.css'
+import "../css/PokemonList.css";
 
-export default function PokemonList({ pokemons, currentPage, setCurrentPage, totalPages, loading }) {
-
+export default function PokemonList({
+  pokemons,
+  currentPage,
+  setCurrentPage,
+  totalPages,
+  loading,
+}) {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  })
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 
   const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber)
-  }
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <div>
-      {loading ?
+      {loading ? (
         <div className="container-spinner">
           <div className="spinner"></div>
         </div>
-        : <PokemonGrid pokemons={pokemons} />
-      }
+      ) : (
+        <PokemonGrid pokemons={pokemons} />
+      )}
       <div className="container-pages">
         <div>
           {currentPage > 1 && (
-            <button className="button-pages" onClick={() => paginate(currentPage - 1)}
-            >Previous page</button>
+            <button
+              className="button-pages"
+              onClick={() => paginate(currentPage - 1)}
+            >
+              Previous page
+            </button>
           )}
 
           {Array.from({ length: totalPages }).map((_, index) => (
             <button
-              className="button-pages"
+              className={`button-pages ${
+                currentPage === index + 1 ? "active-page" : ""
+              }`}
               key={index}
               onClick={() => paginate(index + 1)}
-              disabled={currentPage === index + 1}
             >
               {index + 1}
             </button>
           ))}
 
           {currentPage > 1 && (
-            <button className="button-pages" onClick={() => paginate(currentPage + 1)}
+            <button
+              className="button-pages"
+              onClick={() => paginate(currentPage + 1)}
               disabled={currentPage >= totalPages}
-            >Next page</button>
+            >
+              Next page
+            </button>
           )}
         </div>
       </div>
     </div>
-  )
+  );
 }

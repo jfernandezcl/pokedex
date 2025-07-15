@@ -14,3 +14,11 @@
 .about-card:hover {
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.3), 0 0 14px rgba(0, 255, 255, 0.15);
 }
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 20px;
+    margin: 4% auto;
+    font-size: 14px;
+  }
+}

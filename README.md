@@ -60,4 +60,6 @@ This project is deployed on Vercel.
 
 ---
 
-![Vista previa](src/img-app.jpg)
+## 🖼️ App Preview
+
+<img src="assets/img-app.jpg" alt="Vista previa de la app" width="600" />

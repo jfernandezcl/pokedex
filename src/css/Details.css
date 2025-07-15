@@ -20,15 +20,16 @@
   align-items: center;
   justify-content: center;
   gap: 6rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   font-weight: 500;
   font-size: 4rem;
   letter-spacing: 1px;
   font-family: 'Orbitron', sans-serif;
-  color: #0ea5e9; 
+  color: #0ea5e9;
   text-shadow: 0 0 4px rgba(14, 165, 233, 0.4),
                0 0 8px rgba(14, 165, 233, 0.3);
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .container-primary {
@@ -36,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 6rem 6rem;
+  margin: 4rem auto;
   gap: 16px;
 }
 
@@ -56,36 +57,78 @@
   justify-content: space-between;
   gap: 40px;
   font-weight: 600;
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
   padding: 20px;
   margin-top: 2rem;
   background-color: #1f2937;
   border-radius: 12px;
   box-shadow: 0 0 6px rgba(0, 255, 255, 0.05);
+  flex-wrap: wrap;
+}
+
+.details-type,
+.details-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 30px;
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.1);
+  padding: 0 12px;
+  text-align: center;
 }
 
 .details-type {
   background-color: #1e3a8a;
   color: #e0f2f1;
-  width: 200px;
-  height: 30px;
-  border-radius: 8px;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 6px rgba(0, 255, 255, 0.1);
+  min-width: 160px;
 }
 
 .details-size {
   background-color: #334155;
   color: #d1d5db;
-  width: 125px;
-  height: 30px;
-  border-radius: 8px;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 4px rgba(0, 255, 255, 0.1);
+  min-width: 125px;
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    padding: 16px;
+    margin: 6% auto;
+    font-size: 14px;
+    max-width: 90vw;
+  }
+
+  .pokemon-header {
+    font-size: 2.2rem;
+    gap: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .pokemon-images {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container-details {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .details-type,
+  .details-size {
+    font-size: 13px;
+    min-width: auto;
+    width: 30%;
+    height: auto;
+    padding: 8px;
+  }
+
+  .container-primary {
+    margin: 2rem auto;
+  }
 }

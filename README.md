@@ -57,3 +57,7 @@ This project is deployed on Vercel.
 
 - PokeAPI: Provides the Pokémon data displayed in the app
 - URL: https://pokeapi.co/
+
+---
+
+![Vista previa](src/img-app.jpg)

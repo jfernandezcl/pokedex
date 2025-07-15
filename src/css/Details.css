@@ -37,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 4rem auto;
+  margin: 2rem auto;
   gap: 16px;
 }
 
@@ -103,7 +103,7 @@
   .pokemon-header {
     font-size: 2.2rem;
     gap: 1rem;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
   }
 
   .pokemon-images {
@@ -121,11 +121,11 @@
 
   .details-type,
   .details-size {
-    font-size: 13px;
+    font-size: 12px;
     min-width: auto;
     width: 30%;
     height: auto;
-    padding: 8px;
+    padding: 6px;
   }
 
   .container-primary {

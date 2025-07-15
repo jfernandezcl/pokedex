@@ -88,30 +88,36 @@
 
 @media (max-width: 480px) {
   .container-card {
-    width: 230px;
-    height: 330px;
+    width: 260px;
+    height: 360px;
+    padding: 12px;
+    border-radius: 12px;
   }
 
   .card-imagen {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
   }
 
   .card-id {
-    font-size: 12px;
-    padding: 3px 8px;
+    font-size: 13px;
+    padding: 4px 8px;
   }
 
   .card-name {
-    font-size: 16px;
+    font-size: 20px;
+    margin: 6px 0;
   }
 
   .card-type {
-    font-size: 12px;
+    font-size: 13px;
+    margin-top: 4px;
   }
 
   .card-size {
-    font-size: 12px;
-    padding: 3px 8px;
+    font-size: 13px;
+    padding: 4px 8px;
+    margin-top: 4px;
   }
 }

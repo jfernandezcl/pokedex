@@ -17,8 +17,9 @@
 
 @media (max-width: 480px) {
   .about-card {
-    padding: 20px;
-    margin: 4% auto;
-    font-size: 14px;
+    padding: 10px;
+    margin: 2% auto;
+    font-size: 12px;
+    max-width: 95vw; 
   }
 }

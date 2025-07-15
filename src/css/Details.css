@@ -94,8 +94,8 @@
 
 @media (max-width: 480px) {
   .details-container {
-    padding: 16px;
-    margin: 6% auto;
+    padding: 12px;
+    margin: 4% auto;
     font-size: 14px;
     max-width: 90vw;
   }
@@ -114,8 +114,8 @@
   .container-details {
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    padding: 12px;
+    width: 80%;
+    padding: 8px;
     gap: 12px;
   }
 

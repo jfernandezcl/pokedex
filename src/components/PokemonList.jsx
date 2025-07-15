@@ -33,7 +33,7 @@ export default function PokemonList({
               className="button-pages"
               onClick={() => paginate(currentPage - 1)}
             >
-              Previous page
+              ←
             </button>
           )}
 
@@ -55,7 +55,7 @@ export default function PokemonList({
               onClick={() => paginate(currentPage + 1)}
               disabled={currentPage >= totalPages}
             >
-              Next page
+              →
             </button>
           )}
         </div>

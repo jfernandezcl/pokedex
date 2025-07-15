@@ -88,8 +88,8 @@
 
 @media (max-width: 480px) {
   .container-card {
-    width: 280px;
-    height: 400px;
+    width: 270px;
+    height: 380px;
     padding: 14px;
     border-radius: 14px;
   }

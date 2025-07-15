@@ -89,10 +89,14 @@
 @media (max-width: 480px) {
   .container-card {
     width: 270px;
-    height: 380px;
+    height: 370px;
     padding: 14px;
     border-radius: 14px;
   }
+
+  .card-pokemon {
+  height: 150px;
+}
 
   .card-imagen {
     width: 140px;

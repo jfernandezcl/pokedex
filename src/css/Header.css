@@ -36,3 +36,29 @@
 .container-banner img {
   height: 70px;
 }
+
+@media (max-width: 480px) {
+  .container-banner {
+    padding: 0 12px;
+    height: 60px;
+  }
+
+  .container-banner ul {
+    padding: 8px;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .container-banner ul li {
+    margin: 0 12px;
+  }
+
+  .container-banner ul li a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .container-banner img {
+    height: 50px;
+  }
+}

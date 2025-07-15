@@ -18,8 +18,8 @@
 @media (max-width: 480px) {
   .about-card {
     padding: 10px;
-    margin: 2% auto;
+    margin: 8% auto;
     font-size: 12px;
-    max-width: 95vw; 
+    max-width: 90vw; 
   }
 }

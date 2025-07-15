@@ -18,3 +18,16 @@
                0 0 8px rgba(14, 165, 233, 0.3);
  
 }
+
+@media (max-width: 480px) {
+  .home-title {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .home-title h1 {
+    font-size: 1.8rem;  
+    padding: 8px 10px;  
+    letter-spacing: 0.5px; 
+  }
+}

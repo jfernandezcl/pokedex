@@ -61,3 +61,7 @@ This project is deployed on Vercel.
 ---
 
 <img src="./src/assets/imagen-app.png" alt="Task Tracker Preview" width="100%" />
+
+---
+
+<img src="./src/assets/imagen-pokemon.png" alt="Task Tracker Preview" width="100%" />
